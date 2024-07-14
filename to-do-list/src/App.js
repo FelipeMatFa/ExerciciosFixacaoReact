@@ -1,11 +1,11 @@
 import './App.css';
-import Relogio from './components/Relogio';
+import ListaTarefas from './components/Listatarefas';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Relogio />
+        <ListaTarefas />
       </header>
     </div>
   );

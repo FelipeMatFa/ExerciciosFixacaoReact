@@ -4,8 +4,9 @@ function Limparcampo(){
     let inputRef = useRef(null);
 
     let handleClick = () => {
-        inputRef.current.value = ""
+        // Focus serve para sempre focar em determinado campo ou elemento
         inputRef.current.focus();
+        inputRef.current.value = ""
     }
 
     return(
@@ -13,7 +14,7 @@ function Limparcampo(){
             <input type="text" ref={inputRef} />
             
             <button onClick={handleClick}>
-                Click me!
+                Limpe
             </button>
         </div>
     )
